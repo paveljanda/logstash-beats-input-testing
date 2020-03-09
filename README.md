@@ -1,0 +1,1 @@
+# logstash-beats-input-testing
