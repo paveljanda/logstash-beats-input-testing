@@ -1,0 +1,26 @@
+filebeat.inputs:
+- type: log
+  enabled: true
+  paths:
+    - /var/log/*
+
+output.logstash:
+ hosts: ["host.docker.internal:5000"]
+# hosts: ["host.docker.internal:5000", "logstash:5000"]
+
+# output.logstash:
+#  hosts: ["logstash:5000"]
+#  ssl.enabled: true
+#  ssl.verification_mode: none
+#  worker: 10
+#  bulk_max_size: 1000
+
+# output.redis:
+#   hosts: ["redis:6379"]
+#   key: "filebeat"
+#   db: 0
+#   timeout: 5
+
+# output.console:
+#   pretty: true
+    
