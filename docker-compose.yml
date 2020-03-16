@@ -6,7 +6,7 @@ services:
     user: root
     volumes:
       - ./filebeat.yml:/usr/share/filebeat/filebeat.yml
-       - /var/log/:/var/log/:ro
+      - /var/log/:/var/log/:ro
       #- ./a.log/:/var/log/a.log:ro
       # - /var/log/audit/:/var/log/audit/:ro
     command: ["--strict.perms=false"]

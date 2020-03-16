@@ -23,4 +23,3 @@ output.logstash:
 
 # output.console:
 #   pretty: true
-    
